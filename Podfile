@@ -7,5 +7,8 @@ target 'Ime' do
 
   # Pods for Ime
   pod 'Firebase'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
 
 end
