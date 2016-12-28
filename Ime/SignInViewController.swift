@@ -34,10 +34,12 @@ class SignInViewController: UIViewController {
                         print("Avinash error: \(error?.localizedDescription)")
                     } else {
                         print("Avinash: Signed Up Successfully")
+                        self.performSegue(withIdentifier: signInSegue, sender: nil)
                     }
                 })
             } else {
                 print("Avinash: Signed In Successfully")
+                self.performSegue(withIdentifier: signInSegue, sender: nil)
             }
         })
     }

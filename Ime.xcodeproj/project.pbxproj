@@ -13,7 +13,10 @@
 		E16AA3AE1E121DD0007FE5B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16AA3AC1E121DD0007FE5B7 /* Main.storyboard */; };
 		E16AA3B01E121DD0007FE5B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E16AA3AF1E121DD0007FE5B7 /* Assets.xcassets */; };
 		E16AA3B31E121DD0007FE5B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E16AA3B11E121DD0007FE5B7 /* LaunchScreen.storyboard */; };
-		E16AA3BB1E122187007FE5B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E16AA3BA1E122187007FE5B7 /* GoogleService-Info.plist */; };
+		E16AA3BD1E123A78007FE5B7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16AA3BC1E123A78007FE5B7 /* Constants.swift */; };
+		E16AA3BF1E123D1B007FE5B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E16AA3BE1E123D1B007FE5B7 /* GoogleService-Info.plist */; };
+		E16AA3C11E124144007FE5B7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16AA3C01E124144007FE5B7 /* HomeViewController.swift */; };
+		E16AA3C31E124850007FE5B7 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16AA3C21E124850007FE5B7 /* PictureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +30,10 @@
 		E16AA3AF1E121DD0007FE5B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E16AA3B21E121DD0007FE5B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E16AA3B41E121DD0007FE5B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E16AA3BA1E122187007FE5B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E16AA3BC1E123A78007FE5B7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E16AA3BE1E123D1B007FE5B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E16AA3C01E124144007FE5B7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E16AA3C21E124850007FE5B7 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +80,13 @@
 				E16AA3A81E121DD0007FE5B7 /* AppDelegate.swift */,
 				E16AA3AA1E121DD0007FE5B7 /* SignInViewController.swift */,
 				E16AA3AC1E121DD0007FE5B7 /* Main.storyboard */,
+				E16AA3C21E124850007FE5B7 /* PictureViewController.swift */,
+				E16AA3C01E124144007FE5B7 /* HomeViewController.swift */,
+				E16AA3BC1E123A78007FE5B7 /* Constants.swift */,
 				E16AA3AF1E121DD0007FE5B7 /* Assets.xcassets */,
 				E16AA3B11E121DD0007FE5B7 /* LaunchScreen.storyboard */,
 				E16AA3B41E121DD0007FE5B7 /* Info.plist */,
-				E16AA3BA1E122187007FE5B7 /* GoogleService-Info.plist */,
+				E16AA3BE1E123D1B007FE5B7 /* GoogleService-Info.plist */,
 			);
 			path = Ime;
 			sourceTree = "<group>";
@@ -155,7 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E16AA3B31E121DD0007FE5B7 /* LaunchScreen.storyboard in Resources */,
-				E16AA3BB1E122187007FE5B7 /* GoogleService-Info.plist in Resources */,
+				E16AA3BF1E123D1B007FE5B7 /* GoogleService-Info.plist in Resources */,
 				E16AA3B01E121DD0007FE5B7 /* Assets.xcassets in Resources */,
 				E16AA3AE1E121DD0007FE5B7 /* Main.storyboard in Resources */,
 			);
@@ -218,6 +227,9 @@
 			files = (
 				E16AA3AB1E121DD0007FE5B7 /* SignInViewController.swift in Sources */,
 				E16AA3A91E121DD0007FE5B7 /* AppDelegate.swift in Sources */,
+				E16AA3BD1E123A78007FE5B7 /* Constants.swift in Sources */,
+				E16AA3C11E124144007FE5B7 /* HomeViewController.swift in Sources */,
+				E16AA3C31E124850007FE5B7 /* PictureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
