@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class SnapDisplayViewController: UIViewController {
 
@@ -21,6 +22,8 @@ class SnapDisplayViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         label.text = snap.descript
+        
+        imageView.sd_setImage(with: URL(string: snap.imageURL))
     }
 
     override func didReceiveMemoryWarning() {
