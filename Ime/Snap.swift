@@ -12,4 +12,6 @@ class Snap {
     var imageURL = ""
     var descript = ""
     var from = ""
+    var key = ""
+    var uuid = ""
 }

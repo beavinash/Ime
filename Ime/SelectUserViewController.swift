@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import FirebaseAuth
 
 class SelectUserViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -19,6 +20,8 @@ class SelectUserViewController: UIViewController, UITableViewDataSource, UITable
     var imageURL = ""
     
     var descript: String = ""
+    
+    var uuid = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +39,8 @@ class SelectUserViewController: UIViewController, UITableViewDataSource, UITable
             
             user.email = (snapshot.value as! NSDictionary)["email"] as! String
             user.uid = snapshot.key
+            
+            
             
             // apppend the created object user
             self.users.append(user)
@@ -63,7 +68,7 @@ class SelectUserViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let user = users[indexPath.row]
         
-        let snap = ["from": user.email, "description": descript, "imageURL": imageURL]
+        let snap = ["from": FIRAuth.auth()!.currentUser!.email!, "description": descript, "imageURL": imageURL, "uuid": uuid]
         FIRDatabase.database().reference().child("users").child(user.uid).child("snaps").childByAutoId().setValue(snap)
         
         navigationController!.popToRootViewController(animated: true)

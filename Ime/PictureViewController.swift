@@ -21,12 +21,15 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     var imagePicker = UIImagePickerController()
     
+    var uuid = NSUUID().uuidString
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         imagePicker.delegate = self
+        nextButton.isEnabled = false
     }
     
     
@@ -38,6 +41,8 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         imageView.image = image
+        
+        nextButton.isEnabled = true
         imagePicker.dismiss(animated: true, completion: nil)
     }
     
@@ -50,13 +55,14 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         let imageData = UIImageJPEGRepresentation(imageView.image!, 0.2)!
         
         
-        imagesFolder.child("\(NSUUID().uuidString).jpg").put(imageData, metadata: nil, completion: {(metadata, error) in
+        imagesFolder.child("\(uuid).jpg").put(imageData, metadata: nil, completion: {(metadata, error) in
             print("Tried to upload to images folder")
             if error != nil {
                 print("We had an error: \(error)")
             } else {
                 // print(metadata?.downloadURL())
                 self.performSegue(withIdentifier: userSegue, sender: metadata?.downloadURL()!.absoluteString)
+                
             }
             
         })
@@ -69,7 +75,7 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         nextVC.imageURL = sender as! String
         nextVC.descript = descriptionTextField.text!
-            
+        nextVC.uuid = uuid
     }
 
     override func didReceiveMemoryWarning() {
