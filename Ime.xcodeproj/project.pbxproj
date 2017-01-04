@@ -17,6 +17,8 @@
 		E16AA3BF1E123D1B007FE5B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E16AA3BE1E123D1B007FE5B7 /* GoogleService-Info.plist */; };
 		E16AA3C11E124144007FE5B7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16AA3C01E124144007FE5B7 /* HomeViewController.swift */; };
 		E16AA3C31E124850007FE5B7 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16AA3C21E124850007FE5B7 /* PictureViewController.swift */; };
+		E16AA3C51E13B440007FE5B7 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16AA3C41E13B440007FE5B7 /* SelectUserViewController.swift */; };
+		E1A560A41E1958AF00B412DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A560A31E1958AF00B412DC /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		E16AA3BE1E123D1B007FE5B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E16AA3C01E124144007FE5B7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E16AA3C21E124850007FE5B7 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		E16AA3C41E13B440007FE5B7 /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
+		E1A560A31E1958AF00B412DC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,10 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				E16AA3A81E121DD0007FE5B7 /* AppDelegate.swift */,
-				E16AA3AA1E121DD0007FE5B7 /* SignInViewController.swift */,
+				E1A560A61E19592000B412DC /* ViewControllers */,
+				E1A560A51E19591200B412DC /* Models */,
 				E16AA3AC1E121DD0007FE5B7 /* Main.storyboard */,
-				E16AA3C21E124850007FE5B7 /* PictureViewController.swift */,
-				E16AA3C01E124144007FE5B7 /* HomeViewController.swift */,
 				E16AA3BC1E123A78007FE5B7 /* Constants.swift */,
 				E16AA3AF1E121DD0007FE5B7 /* Assets.xcassets */,
 				E16AA3B11E121DD0007FE5B7 /* LaunchScreen.storyboard */,
@@ -89,6 +92,25 @@
 				E16AA3BE1E123D1B007FE5B7 /* GoogleService-Info.plist */,
 			);
 			path = Ime;
+			sourceTree = "<group>";
+		};
+		E1A560A51E19591200B412DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1A560A31E1958AF00B412DC /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E1A560A61E19592000B412DC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E16AA3AA1E121DD0007FE5B7 /* SignInViewController.swift */,
+				E16AA3C41E13B440007FE5B7 /* SelectUserViewController.swift */,
+				E16AA3C21E124850007FE5B7 /* PictureViewController.swift */,
+				E16AA3C01E124144007FE5B7 /* HomeViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		E40F31829C0A9E4BD0A170A4 /* Pods */ = {
@@ -228,8 +250,10 @@
 				E16AA3AB1E121DD0007FE5B7 /* SignInViewController.swift in Sources */,
 				E16AA3A91E121DD0007FE5B7 /* AppDelegate.swift in Sources */,
 				E16AA3BD1E123A78007FE5B7 /* Constants.swift in Sources */,
+				E16AA3C51E13B440007FE5B7 /* SelectUserViewController.swift in Sources */,
 				E16AA3C11E124144007FE5B7 /* HomeViewController.swift in Sources */,
 				E16AA3C31E124850007FE5B7 /* PictureViewController.swift in Sources */,
+				E1A560A41E1958AF00B412DC /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
