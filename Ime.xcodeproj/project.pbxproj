@@ -19,6 +19,8 @@
 		E16AA3C31E124850007FE5B7 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16AA3C21E124850007FE5B7 /* PictureViewController.swift */; };
 		E16AA3C51E13B440007FE5B7 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16AA3C41E13B440007FE5B7 /* SelectUserViewController.swift */; };
 		E1A560A41E1958AF00B412DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A560A31E1958AF00B412DC /* User.swift */; };
+		E1F195EB1E1D4CC7000D428B /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F195EA1E1D4CC7000D428B /* Snap.swift */; };
+		E1F195ED1E1D5231000D428B /* SnapDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F195EC1E1D5231000D428B /* SnapDisplayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		E16AA3C21E124850007FE5B7 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		E16AA3C41E13B440007FE5B7 /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		E1A560A31E1958AF00B412DC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E1F195EA1E1D4CC7000D428B /* Snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
+		E1F195EC1E1D5231000D428B /* SnapDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapDisplayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				E1A560A31E1958AF00B412DC /* User.swift */,
+				E1F195EA1E1D4CC7000D428B /* Snap.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 				E16AA3C41E13B440007FE5B7 /* SelectUserViewController.swift */,
 				E16AA3C21E124850007FE5B7 /* PictureViewController.swift */,
 				E16AA3C01E124144007FE5B7 /* HomeViewController.swift */,
+				E1F195EC1E1D5231000D428B /* SnapDisplayViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -253,7 +259,9 @@
 				E16AA3C51E13B440007FE5B7 /* SelectUserViewController.swift in Sources */,
 				E16AA3C11E124144007FE5B7 /* HomeViewController.swift in Sources */,
 				E16AA3C31E124850007FE5B7 /* PictureViewController.swift in Sources */,
+				E1F195ED1E1D5231000D428B /* SnapDisplayViewController.swift in Sources */,
 				E1A560A41E1958AF00B412DC /* User.swift in Sources */,
+				E1F195EB1E1D4CC7000D428B /* Snap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

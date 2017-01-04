@@ -20,3 +20,4 @@ import UIKit
 
 let signInSegue = "signinsegue"
 let userSegue = "selectUserSegue"
+let viewSnapSegue = "viewsnapsegue"
